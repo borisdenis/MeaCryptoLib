@@ -8,7 +8,6 @@ namespace MeaCryptoLib
     public class Rijndael
     {
         readonly int keySize = 256; //It must be 128-bit, 192-bit, or 256-bit
-        //int passwordIterations = 2;
 
 
         //Шифруем
