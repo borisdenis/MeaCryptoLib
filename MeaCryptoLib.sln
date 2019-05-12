@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeaCryptoLib", "MeaCryptoLib\MeaCryptoLib.csproj", "{096DF5D0-B7BA-4940-AE85-E4EE5B228FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestMeaCryptoLib", "UnitTestProject1\UnitTestMeaCryptoLib.csproj", "{AD9B1481-86F9-4668-AA6D-9024AEF8D09B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{096DF5D0-B7BA-4940-AE85-E4EE5B228FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096DF5D0-B7BA-4940-AE85-E4EE5B228FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096DF5D0-B7BA-4940-AE85-E4EE5B228FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096DF5D0-B7BA-4940-AE85-E4EE5B228FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9B1481-86F9-4668-AA6D-9024AEF8D09B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9B1481-86F9-4668-AA6D-9024AEF8D09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9B1481-86F9-4668-AA6D-9024AEF8D09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9B1481-86F9-4668-AA6D-9024AEF8D09B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3144C2E3-9EBC-4B9D-9B22-74320243D042}
+	EndGlobalSection
+EndGlobal
