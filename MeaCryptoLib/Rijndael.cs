@@ -8,7 +8,11 @@ namespace MeaCryptoLib
     public class Rijndael
     {
         readonly int keySize = 256; //It must be 128-bit, 192-bit, or 256-bit
-
+        public struct Result
+        {
+            public int Status;
+            public string Message;
+        }
 
         //Шифруем
         public string Encrypt(string plainText, string passPhrase, int passwordIterations)
@@ -80,8 +84,9 @@ namespace MeaCryptoLib
         }
 
         //Расшифровываем
-        public string Decrypt(string cipherText, string passPhrase, int passwordIterations)
+        public Result Decrypt(string cipherText, string passPhrase, int passwordIterations)
         {
+            Result rez = new Result();
             // Convert strings defining encryption key characteristics into byte 
             // arrays. Let us assume that strings only contain ASCII codes. 
             // If strings include Unicode characters, use Unicode, UTF7, or UTF8 
@@ -155,10 +160,14 @@ namespace MeaCryptoLib
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                rez.Status = 0;
+                rez.Message = ex.Message;
+                return rez;
             }
             // Return decrypted string. 
-            return plainText;
+            rez.Status = 1;
+            rez.Message = plainText;
+            return rez;
         }
 
         private string CreateMD5(string input)
